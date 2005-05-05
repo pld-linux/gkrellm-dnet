@@ -1,11 +1,11 @@
 Summary:	dnet monitor plugin for gkrellm
 Summary(pl):	Plugin gkrellm z monitorem dnet
-Name:		gkrelldnet
+Name:		gkrellm-dnet
 Version:	0.14.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://dl.sourceforge.net/gkrelldnet/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/gkrelldnet/gkrelldnet-%{version}.tar.gz
 # Source0-md5:	37336d08cccd280fea0cfdc7744ebd32
 URL:		http://gkrelldnet.sourceforge.net/
 BuildRequires:	gkrellm-devel >= 2.0
