@@ -1,5 +1,5 @@
 Summary:	dnet monitor plugin for gkrellm
-Summary(pl):	Plugin gkrellm z monitorem dnet
+Summary(pl):	Wtyczka gkrellma z monitorem dnet
 Name:		gkrellm-dnet
 Version:	0.14.2
 Release:	1
@@ -18,22 +18,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A GKrellM plugin which lets you monitor your dnet progress.
 
 %description -l pl
-Plugin GKrellM pozwalaj±cy monitorowaæ swoje postêpy w dnet.
+Wtyczka GKrellMa pozwalaj±ca monitorowaæ swoje postêpy w dnet.
 
 %prep
 %setup -q -n gkrelldnet
 
 %build
-# typo - two different variables for optflags
 %{__make} \
 	CC="%{__cc}" \
-	DBGFLAGS="%{rpmcflags}" \
-	DGBFLAGS="%{rpmcflags}"
+	CFLAGS="%{rpmcflags} -Wall -fPIC -D_GNU_SOURCE" \
+	LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -D gkrelldnet.so  $RPM_BUILD_ROOT%{_libdir}/gkrellm2/plugins/gkrelldnet.so
+install -D gkrelldnet.so $RPM_BUILD_ROOT%{_libdir}/gkrellm2/plugins/gkrelldnet.so
 
 %clean
 rm -rf $RPM_BUILD_ROOT
