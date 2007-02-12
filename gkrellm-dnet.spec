@@ -1,5 +1,5 @@
 Summary:	dnet monitor plugin for gkrellm
-Summary(pl):	Wtyczka gkrellma z monitorem dnet
+Summary(pl.UTF-8):   Wtyczka gkrellma z monitorem dnet
 Name:		gkrellm-dnet
 Version:	0.14.2
 Release:	1
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A GKrellM plugin which lets you monitor your dnet progress.
 
-%description -l pl
-Wtyczka GKrellMa pozwalaj±ca monitorowaæ swoje postêpy w dnet.
+%description -l pl.UTF-8
+Wtyczka GKrellMa pozwalajÄ…ca monitorowaÄ‡ swoje postÄ™py w dnet.
 
 %prep
 %setup -q -n gkrelldnet
