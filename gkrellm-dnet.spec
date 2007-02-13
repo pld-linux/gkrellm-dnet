@@ -1,5 +1,5 @@
 Summary:	dnet monitor plugin for gkrellm
-Summary(pl.UTF-8):   Wtyczka gkrellma z monitorem dnet
+Summary(pl.UTF-8):	Wtyczka gkrellma z monitorem dnet
 Name:		gkrellm-dnet
 Version:	0.14.2
 Release:	1
